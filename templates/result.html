@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Case Result</title>
+</head>
+<body>
+    <h1>Case Details</h1>
+
+    <ul>
+        <li><strong>Case:</strong> {{ result.case }}</li>
+        <li><strong>Parties:</strong> {{ result.parties }}</li>
+        <li><strong>Filing Date:</strong> {{ result.filing_date }}</li>
+        <li><strong>Next Hearing:</strong> {{ result.next_hearing }}</li>
+    </ul>
+
+    {% if result.order_pdf %}
+        <a href="{{ result.order_pdf }}" target="_blank">Download Latest Order PDF</a>
+    {% else %}
+        <p>No order PDF available.</p>
+    {% endif %}
+
+    <br><br>
+    <a href="/">🔙 Search Another Case</a>
+</body>
+</html>
