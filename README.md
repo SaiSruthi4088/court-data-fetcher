@@ -31,3 +31,7 @@ This is a simple Flask-based web application that simulates fetching Indian cour
 
 ```bash
 cd court-data-fetcher
+## 🔒 CAPTCHA Handling
+
+The eCourt website was accessed manually during testing, and no CAPTCHA was encountered. As a result, no CAPTCHA bypass (manual or automated) was needed.
+
